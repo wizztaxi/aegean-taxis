@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100" data-bs-theme="dark">
-  
-  
-  <head>
+
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="hello@wizztaxi.com">
-    
+
     <title>Podaj swoją lokalizację kierowcy aby bez trudu mógł Cię odnaleźć</title>
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <link href="/cover.css" rel="stylesheet">
 
 
@@ -19,143 +22,164 @@
 
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-  <style>
-        @font-face{
-            font-family: 'Aileron'; 
+    <style>
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 400;
-            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Regular.ttf);  
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Regular.ttf);
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 400;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Regular.ttf);
             unicode-range: U+41-5a;
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 400;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Regular.ttf);
             unicode-range: U+61-7a;
         }
-        
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 600;
-            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Medium.ttf);  
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Medium.ttf);
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 600;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Medium.ttf);
             unicode-range: U+41-5a;
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 600;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Medium.ttf);
             unicode-range: U+61-7a;
         }
 
-        @font-face{
-            font-family: 'Aileron'; 
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 700;
-            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Bold.ttf);  
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Bold.ttf);
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 700;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Bold.ttf);
             unicode-range: U+41-5a;
         }
-        @font-face{
-            font-family: 'Aileron'; 
+
+        @font-face {
+            font-family: 'Aileron';
             font-weight: 700;
             src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Bold.ttf);
             unicode-range: U+61-7a;
         }
-     
-    </style></head>
-  <body class="d-flex h-100 text-center text-bg-dark">
+    </style>
 
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<!--   <header class="mb-auto">
+
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+    </script>
+
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <!--   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Cover</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -166,28 +190,30 @@
     </div>
   </header> -->
 
-  <main class="px-3">
-    <h1>Podaj swoją lokalizację kierowcy aby bez trudu mógł Cię odnaleźć</h1>
-  
-    <div class="row p-4">
-       <button id="share_location" type="button" class="btn btn-lg btn-primary">Przekaż moją lokalizację</button>
-    </div>
-    <div class="row p-4">
-        <code id="location">....</code>        
-    </div>
-    <div class="row p-4">
-      <a id="whatsappLink" style="visibility: hidden;" target="_blank" type="button" class="btn btn-lg btn-primary">kliknij tutaj jeżeli Whatsapp nie otworzył się automatycznie</a>
-    </div>
-  </main>
+        <main class="px-3">
+            <h1>Podaj swoją lokalizację kierowcy aby bez trudu mógł Cię odnaleźć</h1>
 
-  <footer class="mt-auto text-white-50">
-    <p>powered by <a href="mailto:hello@wizztaxi.com" class="text-white">hello@wizztaxi.com</a>.</p>
-  </footer>
-</div>
+            <div class="row p-4">
+                <button id="share_location" type="button" class="btn btn-lg btn-primary">Przekaż moją
+                    lokalizację</button>
+            </div>
+            <div class="row p-4">
+                <code id="location">....</code>
+            </div>
+            <div class="row p-4">
+                <a id="whatsappLink" style="visibility: hidden;" target="_blank" type="button"
+                    class="btn btn-lg btn-primary">kliknij tutaj jeżeli Whatsapp nie otworzył się automatycznie</a>
+            </div>
+        </main>
 
-    
-    
-<script>
+        <footer class="mt-auto text-white-50">
+            <p>powered by <a href="mailto:hello@wizztaxi.com" class="text-white">hello@wizztaxi.com</a>.</p>
+        </footer>
+    </div>
+
+
+
+    <script>
         function createGoogleMapsLink(latitude, longitude) {
             return `https://www.google.com/maps?q=${latitude},${longitude}`;
         }
@@ -211,7 +237,7 @@
                 // Set the href attribute of the hidden anchor element
                 const whatsappLink = document.getElementById('whatsappLink');
                 whatsappLink.href = `https://wa.me/+48739222082?text=Jestem%20tutaj%3A%20${encodeURIComponent(googleMapsLink)}`;
-              
+
                 whatsappLink.style.visibility = 'visible';
 
                 // Simulate a click on the hidden anchor element
@@ -226,6 +252,11 @@
             navigator.geolocation.getCurrentPosition(success, error);
         }
         document.getElementById('share_location').addEventListener("click", displayLocation);
+
+        mixpanel.init('71b88e49c8335a8b072250e27b7233e0', { debug: true, track_pageview: true });
     </script>
-  </body>
-</html>  
+</body>
+
+</html>
+
+
